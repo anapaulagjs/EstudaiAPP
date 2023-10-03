@@ -41,9 +41,10 @@
         <p>&copy; 2023 Matemática Básica App</p>
     </footer>
     <script>
-  fetch('data.json') // Corrigido para 'data.json' em vez de 'data.jason'
+  fetch('data.json')
   .then(response => response.json())
   .then(data => {
+    console.log('Dados recebidos:', data); // Adicione esta linha para depurar
     const professores = data.professores;
     const listaProfessores = document.createElement('ul');
 
@@ -60,6 +61,7 @@
   .catch(error => {
     console.error('Erro ao obter dados dos professores:', error);
   });
+
     </script>
 
 </body>
