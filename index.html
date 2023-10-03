@@ -40,6 +40,28 @@
     <footer>
         <p>&copy; 2023 Matemática Básica App</p>
     </footer>
+    <script>
+  fetch('data.jason')
+    .then(response => response.json())
+    .then(data => {
+      const professores = data.professores; // Suponha que a API retorna um objeto com um array de professores
+      const listaProfessores = document.createElement('ul');
+
+      professores.forEach(professor => {
+        const itemLista = document.createElement('li');
+        itemLista.textContent = `${professor.nome} - ${professor.especializacao}`;
+        listaProfessores.appendChild(itemLista);
+      });
+
+      // Adicione a lista de professores ao seu documento HTML
+      const main = document.querySelector('main'); // Suponha que você tenha um elemento <main> em seu HTML
+      main.appendChild(listaProfessores);
+    })
+    .catch(error => {
+      console.error('Erro ao obter dados dos professores:', error);
+    });
+</script>
+
 </body>
 </html>
 
