@@ -1,0 +1,32 @@
+{
+  "professores": [
+    {
+      "nome": "Professor João",
+      "especializacao": "Algebra",
+      "idade":"28",  
+      "formcão": "Licenciatura em Matemática - UFPB",
+      "contato":  "matemagicaprofs@gmail.com"  
+    },
+    {
+      "nome": "Professora Maria",
+      "especializacao": "Algebra",
+      "idade": "22",  
+      "formcão":"Licenciatura em física - UFPE",
+      "contato": "matemagicaprofs@gmail.com"  
+    },
+    {
+      "nome": "Professor Carlos",
+      "especializacao": "Cálculos diferenciais"
+      "idade": "46",  
+      "formcão":"Licenciatura em Matemática - UFRPE,
+      "contato":  "matemagicaprofs@gmail.com"    
+    },
+    {
+      "nome": "Professora Ana Paula",
+      "especializacao": "Trigonometria",
+      "idade": "23",  
+      "formcão":" Estudante de engenharia elétrica",
+      "contato": "matemagicaprofs@gmail.com"     
+    }
+  ]
+}
